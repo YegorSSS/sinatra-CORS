@@ -15,11 +15,8 @@ end
 set :port, 3000
 
 get "/" do
-	
-	
 	@s = Weather.all
 	erb :api_home
-		
 end
 
 get "/remove_base" do
